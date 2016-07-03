@@ -1,0 +1,120 @@
+<!--Exercise 3.2-->
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<!--This shows the tittle on the top of the page-->
+	
+	<title>Figures</title>
+
+</head>
+
+<body>
+
+		<svg width="700" height="768">
+
+<!--Background-->
+
+		<defs>
+		<linearGradient id="grad1" x1="0%" y1="100%" x2="0%" y2="0%">
+			<stop offset="0%" style="stop-color:rgb(170,140,240);stop-opacity:1" />
+			<stop offset="100%" style="stop-color:rgb(255,255,255);stop-opacity:1" />
+		</linearGradient>
+		</defs>
+		<rect width="1024" height="768" fill="url(#grad1)" /> 
+
+<!--Line-->		
+
+		<line x1="500" y1="50" x2="50" y2="50" style="stroke:#794dff;stroke-width:2" />
+		
+<!--Path-->
+
+		<path d="M150 120 L95 200 L295 200 Z" style="fill:#80ffdf;stroke:#00e673;stroke-width:2"/>
+		
+<!--Polygon-->
+		
+		<polygon points="75,390 300,380 230,280" style="fill:#80ffff;stroke:#00e6ac;stroke-width:2" />
+
+<!--Ellipse-->
+
+		<ellipse cx="190" cy="530" rx="100" ry="50" style="fill:#80dfff;stroke:#00e6e6;stroke-width:2" />
+		
+<!--Rectangle-->
+
+		<rect x=400 y=150 width="200" height="50" style="fill:#80bfff;stroke-width:3;stroke:#ffffff"/>
+ 
+<!--Circle-->
+ 
+		<circle cx="500" cy="320" r="60" stroke="#e6f2ff" stroke-width="3" fill="#809fff" />
+ 
+<!--Polyline-->		
+		
+		<polyline points="440,480 480,480 480,520 520,520 520,560 560,560 560,600" style="fill:none;stroke:#8080ff;stroke-width:6" />
+
+<!--Stroke-->	
+
+		<g fill="none">
+		<path stroke-dasharray="5,5" stroke="#b3b3ff" stroke-width="4" 	d="M12 700 l680 0" />
+		<path stroke-dasharray="10,10" stroke="#ccccff" stroke-width="6" 	d="M12 720 l680 0" />
+		<path stroke-dasharray="20,10,5,5,5,10" stroke="#e6e6ff" stroke-width="8" 	d="M12 740 l680 0" />
+		</g>
+		
+<!-- Label the points -->
+
+		<g font-size="30" font-family="sans-serif" fill="black" stroke="none" text-anchor="middle">
+ 
+ 	<!--Name-->
+		<text x="100" y="-520" fill="red" transform="rotate(90 50,90)">Teresa Frangie</text>
+ 
+	<!--Heading-->
+ 
+		<text x="150" y="50" dy="-10">SVG Figures</text>
+ 		
+		<g font-size="20" font-family="sans-serif" fill="black" stroke="none" text-anchor="middle">
+
+		<!--Figures Names-->
+ 
+ 			<!--Line-->
+			
+		<text x="100" y="80" dx="-30">Line</text>
+ 
+			<!--Path-->
+			
+		<text x="100" y="220" dx="-30">Path</text>
+
+			<!--Polygon-->
+			
+		<text x="100" y="410" dx="-30">Polygon</text>
+			
+			<!--Ellipse-->
+			
+		<text x="100" y="580" dx="-30">Ellipse</text>
+			
+			<!--Rectangle-->
+			
+		<text x="420" y="220" dx="-30">Rectangle</text>
+			
+			<!--Circle-->
+			
+		<text x="420" y="410" dx="-30">Circle</text>
+			
+			<!--Polyline-->
+			
+		<text x="420" y="580" dx="-30">Polyline</text>
+
+			<!--Strokes-->
+			
+		<text x="100" y="690" dx="-30">Strokes</text>
+		
+
+ 
+</svg>
+
+
+	</body>
+
+</html>
+
